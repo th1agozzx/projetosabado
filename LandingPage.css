@@ -34,6 +34,10 @@ header{
     background: rgba(22, 22, 22, 0.2);
 }
 
+h1{
+    width: 70%;
+}
+
 .menu-content {
     text-transform: uppercase;
     height: 100%;
@@ -110,47 +114,30 @@ main {
     text-transform: uppercase;
 }
 
-/*Botões*/
-
-.btns {
+div.container a{
+    text-decoration: none;
+    width: 100%;
+    height: 8vh;
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
 }
 
-.btns button {
-    width: 250px;
-    height: 60px;
-    cursor: pointer;
+input[type="submit"]{
+    padding: 12px 20px;
+    font-size: 20px;
+    opacity: 80%;
+    background-color:rgb(31, 30, 30);
     border: 1px solid white;
+    border-radius: 30px;
+    cursor: pointer;
     color: white;
-    text-transform: uppercase;
-    background-color: transparent;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    border-radius: 20px;
-    position: relative;
-    transition: 1.0s;
-}
-.btns button:hover {
-    color: rgb(251, 255, 0);
+    transition: 0.5s;
+    outline: 0;
 }
 
-
-.btns button:before {
-    content: ' ';
-    border-radius: 20px;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    width: 0;
-    height: 60px;
-    background-color: rgb(61, 61, 61);
-    z-index: -1;
-    transition: 1s;
-}
-
-.btns button:hover:before {
-   width: 100%;
+input[type="submit"]:hover{
+    background-color: white;
+    color: black;
 }
 
