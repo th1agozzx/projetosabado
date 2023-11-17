@@ -26,61 +26,48 @@ body{
     background-repeat: no-repeat;
 }
 
-/* Menu - Header - NavBar */
-
-header{
-    width: 100%;
-    height: 7vh;
-    background: rgba(0, 0, 0, 0.2);
-}
-
-h1{
-    width: 70%;
-}
-
-.menu-content {
-    text-transform: uppercase;
-    height: 100%;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .menu-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    font-size: 1.8rem;
-}
-
-.logo{
-    font-size: 1.8rem;
-    letter-spacing: 0.4rem;
-    cursor: pointer;
-}
-
-.menu-content .list-itens{
-    display: flex;
+  }
+  
+  .logo {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .header-menu ul {
     list-style: none;
-    gap: 10px;
-}
-
-.menu-content .list-itens a {
+    padding: 0;
+    display: flex;
+  }
+  
+  .header-menu ul li {
+    margin-right: 20px;
+  }
+  
+  .header-menu ul li:last-child {
+    margin-right: 0;
+  }
+  
+  .header-menu ul li a {
+    color: #fff;
     text-decoration: none;
-    color: white;
-    padding: 1.5rem;
-    transform: 2ms ease-in;
-    position: relative;
-}
-
-.menu-content .list-itens a:before {
-    content: ' ';
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 0px;
-    height: 1px;
-    background-color: rgb(251, 255, 0);
-    transition: all 1.5s ease;
-}
-
-.menu-content .list-itens a:hover:before {
-    width: 97%;
-}
+    transition: color 0.3s ease;
+  }
+  
+  .header-menu ul li a:hover {
+    color: #ffcc00;
+  }
 
 /*Centro - Conteudo Principal */
 
