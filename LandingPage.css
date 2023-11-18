@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-/* Zerando CSS*/
-
 * {
     margin: 0;
     padding: 0;
@@ -69,7 +67,6 @@ header {
     color: #ffcc00;
   }
 
-/*Centro - Conteudo Principal */
 
 main {
     height: 93vh;
@@ -84,8 +81,6 @@ main {
     justify-content: center;
     align-items: center;
 }
-
-/* Textos conteudo principal */
 
 .primary-text {
     width: 850px;
