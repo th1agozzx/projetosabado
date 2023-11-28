@@ -27,11 +27,12 @@ header {
 }
 
 .menu-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    text-transform: uppercase;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    font-size: 1.8rem;
 }
 
 .logo {
@@ -41,26 +42,31 @@ header {
 
 .header-menu ul {
     list-style: none;
-    padding: 0;
+    gap: 10px;
     display: flex;
 }
 
-.header-menu ul li {
-    margin-right: 20px;
-}
-
-.header-menu ul li:last-child {
-    margin-right: 0;
-}
-
 .header-menu ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transform: 2ms ease-in;
+    position: relative;
+    padding: 0.7rem;
 }
 
-.header-menu ul li a:hover {
-    color: #ffcc00;
+.header-menu ul li a:before {
+    content: ' ';
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(251, 255, 0);
+    transition: all 0.6s ease; 
+}
+
+.header-menu ul li a:hover:before{
+    width: 100%;
 }
 
 /* Centro - Conteudo Principal */
