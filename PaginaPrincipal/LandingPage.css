@@ -16,9 +16,6 @@ html {
 
 body {
     background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(/imagemLanding/imagemBack.jpg) center top/cover no-repeat;
-    margin-bottom: 60px; 
-    position: relative;
-    min-height: 100vh;
 }
 
 header {
